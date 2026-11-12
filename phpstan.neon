@@ -9,9 +9,6 @@ parameters:
     excludePaths:
         # Test dependencies
         - 'tests/TestApplication/src/**.php'
-        # Red phase of US-283: placeholders, replaced by the implementation in the next commit (this entry goes with it).
-        - src/Api/PennylaneClient.php
-        - src/Transmission/PennylaneInvoiceTransmitter.php
 
     ignoreErrors:
         -
