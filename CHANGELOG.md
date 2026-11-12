@@ -3,7 +3,7 @@
 All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased]
+## [0.1.0] - 2026-11-12
 
 ### Added
 - `PennylaneInvoiceTransmitter`, adapter of `InvoiceTransmitterInterface` of `tmonier/sylius-einvoice-transmission-plugin` ^0.2: finds or creates the customer in Pennylane, then imports the Factur-X PDF; success is logged as `deposited` with the Pennylane invoice and customer ids in the message.
