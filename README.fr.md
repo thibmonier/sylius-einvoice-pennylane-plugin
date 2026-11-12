@@ -69,9 +69,14 @@ Les statuts sont ceux du plugin de transmission (`TransmissionStatus`). Un envoi
 
 ## Captures d'écran
 
-![Journal des transmissions : statut et message de chaque envoi à Pennylane](docs/images/admin-einvoice-journal.png)
+Ce plugin n'a pas d'interface (le plugin de transmission non plus) : il agit à la génération de la facture Factur-X et alimente la table du journal `tmonier_einvoice_transmission`. Exemple de ligne après un envoi réussi (valeurs fictives) :
 
-*Journal des transmissions : statut et message de chaque envoi à Pennylane*
+```text
+invoice_id     : 0b6f1c2e-5d3a-4c1b-9a77-2f4e8d1c6a10
+invoice_number : 2026/00042
+status         : deposited
+message        : Imported in Pennylane: invoice id 123456 (customer id 7890).
+```
 
 ## Prérequis
 

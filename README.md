@@ -69,9 +69,14 @@ Verify these against the Pennylane **sandbox** before relying on the plugin; the
 
 ## Screenshots
 
-![Journal of the transmissions: status and message of each send to Pennylane](docs/images/admin-einvoice-journal.png)
+This plugin has no user interface (neither has the transmission plugin): it acts when the Factur-X invoice is generated and feeds the journal table `tmonier_einvoice_transmission`. Example of a line after a successful send (fictitious values):
 
-*Journal of the transmissions: status and message of each send to Pennylane*
+```text
+invoice_id     : 0b6f1c2e-5d3a-4c1b-9a77-2f4e8d1c6a10
+invoice_number : 2026/00042
+status         : deposited
+message        : Imported in Pennylane: invoice id 123456 (customer id 7890).
+```
 
 ## Requirements
 
