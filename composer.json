@@ -18,6 +18,7 @@
         "sylius/sylius": "^2.2.9 || ^2.3",
         "symfony/http-client": "^6.4 || ^7.4 || ^8.0",
         "symfony/http-client-contracts": "^3.0",
+        "symfony/mime": "^6.4 || ^7.4 || ^8.0",
         "tmonier/sylius-einvoice-transmission-plugin": "^0.2"
     },
     "require-dev": {

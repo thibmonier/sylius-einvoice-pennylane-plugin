@@ -1,0 +1,14 @@
+imports:
+    - { resource: "@TmonierSyliusEinvoiceTransmissionPlugin/config/config.yaml" }
+    - { resource: "@TmonierSyliusEinvoicePennylanePlugin/config/config.yaml" }
+    - { resource: "dbal_savepoints.php" }
+    - { resource: "services.php" }
+
+# The Pennylane adapter is the transmitter of the test application; its HTTP client is a scripted one (no real call).
+tmonier_sylius_einvoice_transmission:
+    transmitter: Tmonier\SyliusEinvoicePennylanePlugin\Transmission\PennylaneInvoiceTransmitter
+    document_provider: Tests\Tmonier\SyliusEinvoicePennylanePlugin\Support\FixedInvoiceDocumentProvider
+
+tmonier_einvoice_pennylane:
+    api_token: 'test-token-0123456789'
+    http_client: Tests\Tmonier\SyliusEinvoicePennylanePlugin\Support\ScriptedHttpClient
