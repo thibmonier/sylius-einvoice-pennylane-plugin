@@ -1,0 +1,7 @@
+# No grid, no route, no Twig hook: the services are loaded by the extension of the bundle.
+# Enable the adapter in the application:
+#
+#   tmonier_sylius_einvoice_transmission:
+#       transmitter: Tmonier\SyliusEinvoicePennylanePlugin\Transmission\PennylaneInvoiceTransmitter
+#   tmonier_einvoice_pennylane:
+#       api_token: '%env(PENNYLANE_API_TOKEN)%'
